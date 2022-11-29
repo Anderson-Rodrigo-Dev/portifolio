@@ -37,7 +37,7 @@ export const Navigate = styled.nav`
 export const NavItens = styled(NavLink)`
     color: #FFFFFF;
     cursor: pointer;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 400;
 `
 
