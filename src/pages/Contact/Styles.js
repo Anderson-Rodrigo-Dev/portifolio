@@ -48,7 +48,6 @@ export const Networks = styled.a`
   color: #000;
   font-size: 1rem;
   width: 9.375rem;
-  ${"" /* margin: 0 30px 50px 0; */}
 
   &:nth-child(-n+2) {
     margin-bottom: 50px;
