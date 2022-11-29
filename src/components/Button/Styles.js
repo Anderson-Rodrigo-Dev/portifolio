@@ -4,7 +4,7 @@ export const Button = styled.button`
     background-color: transparent;
     border: 2px solid #2C2020;
     border-radius: 13px;
-    cursor: pointer;
+    cursor: ${props => props.clicked? "default" : "pointer"};
     font-size: 18px;
     font-weight: 400;
     height: 60px;
@@ -13,7 +13,9 @@ export const Button = styled.button`
     
 
     &:hover{
-        background: #2C2020;
-        color: #B79999;
+        background: ${props => props.clicked? "" : "#2C2020"};
+        color: ${props => props.clicked? "" : "#B79999"};
     }
+
+
 `

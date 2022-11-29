@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { RiDownload2Fill } from "react-icons/ri";
 
 export const ContainerAbout = styled.div`
   align-items: center;
@@ -48,3 +49,9 @@ export const AboutMe = styled.p`
   font-size: 16px;
   text-align: justify;
 `;
+
+export const IconDownload = styled(RiDownload2Fill)`
+    color: #2C2020;
+    height: 2rem;
+    width: 2rem;
+`
