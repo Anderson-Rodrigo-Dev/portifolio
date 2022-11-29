@@ -12,7 +12,7 @@ const About = () => {
   return (
     <S.ContainerAbout>
       <S.ContainerInfo>
-        <p>Olá, eu sou</p>
+        <S.AboutMe>Olá, eu sou</S.AboutMe>
         <S.TitleName>Anderson Rodrigo!</S.TitleName>
         <S.AboutMe>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum

@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 
 export const Aside = styled.aside`
-    background-color: #2C2020;
+    background-color: #2C2C2C;
     height: 100vh;
     width: 20%;
 `
@@ -20,7 +20,8 @@ export const Container = styled.div`
 
 export const Picture = styled.img`
     border-radius: 50%;
-    max-width: 250px;
+    max-width: 400px;
+    min-width: 180px;
     object-fit: cover;
     width: 70%;
 `
@@ -31,11 +32,10 @@ export const Navigate = styled.nav`
     gap: 20px;
     margin: 0 auto;
     text-align: start;
-    width: 70%;
 `
 
 export const NavItens = styled(NavLink)`
-    color: #FFFFFF;
+    color: #FEFEFE;
     cursor: pointer;
     font-size: 1rem;
     font-weight: 400;
@@ -44,7 +44,8 @@ export const NavItens = styled(NavLink)`
 export const ContainerIcons = styled.div`
     display: flex;
     justify-content: space-around;
-    width: 180px;
+    width: 70%;
+    min-width: 130px;
 `
 
 export const IconWhatsapp = styled(RiWhatsappFill)`

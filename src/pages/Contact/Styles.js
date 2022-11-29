@@ -9,7 +9,7 @@ import {
 
 export const ContainerContact = styled.div`
   align-items: center;
-  background-color: #b79999;
+  background-color: #111111;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,11 +26,13 @@ export const TitleContact = styled.h2`
   font-size: 30px;
   font-weight: 400;
   margin-bottom: 20px;
+  color: #b79999;
 `;
 
 export const Paragraph = styled.p`
   font-size: 1rem;
   text-align: justify;
+  color: #fefefe;
 `;
 
 export const ContainerIcons = styled.div`
@@ -49,7 +51,7 @@ export const Networks = styled.a`
   font-size: 1rem;
   width: 9.375rem;
 
-  &:nth-child(-n+2) {
+  &:nth-child(-n + 2) {
     margin-bottom: 50px;
   }
 
@@ -59,28 +61,28 @@ export const Networks = styled.a`
 `;
 
 export const IconWhatsapp = styled(RiWhatsappFill)`
-  color: #2c2020;
+  color: #b79999;
   cursor: pointer;
   height: 2rem;
   width: 2rem;
 `;
 
 export const IconLinkedin = styled(RiLinkedinBoxFill)`
-  color: #2c2020;
+  color: #b79999;
   cursor: pointer;
   height: 2rem;
   width: 2rem;
 `;
 
 export const IconGithub = styled(RiGithubFill)`
-  color: #2c2020;
+  color: #b79999;
   cursor: pointer;
   height: 2rem;
   width: 2rem;
 `;
 
 export const IconInstagram = styled(RiInstagramFill)`
-  color: #2c2020;
+  color: #b79999;
   cursor: pointer;
   height: 2rem;
   width: 2rem;
@@ -89,4 +91,5 @@ export const IconInstagram = styled(RiInstagramFill)`
 export const NetworksParagraph = styled.p`
   cursor: pointer;
   font-size: 20px;
-`
+  color: #fefefe;
+`;

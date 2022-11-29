@@ -15,7 +15,7 @@ const Contact = () => {
         <a href="mailto:andersonrodrigodev@gmail.com?subject=Oportunidade de trabalho&body=Olá, tudo bem?"><Button>Diga Olá!</Button></a>
       </S.Contact>
       <div>
-        <S.TitleContact>Minhas redes sociais:</S.TitleContact>
+        <S.TitleContact>Minhas redes sociais</S.TitleContact>
         <S.ContainerIcons>
           <S.Networks
             href="https://www.linkedin.com/in/anderson-rodrigo-oliveira/"

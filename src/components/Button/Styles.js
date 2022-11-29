@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const Button = styled.button`
     background-color: transparent;
-    border: 2px solid #2C2020;
+    border: 2px solid #fefefe;
     border-radius: 13px;
     cursor: ${props => props.clicked? "default" : "pointer"};
     font-size: 18px;
@@ -10,11 +10,12 @@ export const Button = styled.button`
     height: 60px;
     margin-top: 30px;
     width: 150px;
+    color: #fefefe;
     
 
     &:hover{
-        background: ${props => props.clicked? "" : "#2C2020"};
-        color: ${props => props.clicked? "" : "#B79999"};
+        background: ${props => props.clicked? "" : "#b79999"};
+        color: ${props => props.clicked? "" : "#2C2C2C"};
     }
 
 
