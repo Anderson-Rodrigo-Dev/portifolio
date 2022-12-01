@@ -47,7 +47,7 @@ const About = () => {
           </Button>
         ) : (
           <a
-            href="https://export-download.canva.com/VvAyE/DAE6N3VvAyE/399/0-42537700313.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20221129%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221129T133414Z&X-Amz-Expires=20255&X-Amz-Signature=01425cc9c92861681beabece250fabba0c3a888b971ca58859fcaff1d4a57e15&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27Curriculo%2520Anderson.pdf&response-expires=Tue%2C%2029%20Nov%202022%2019%3A11%3A49%20GMT"
+            href="https://export-download.canva.com/VvAyE/DAE6N3VvAyE/403/0-42817007312.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20221201%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221201T052810Z&X-Amz-Expires=59722&X-Amz-Signature=eb703482fde4f0883ff7ded716c85e30b6219e7101f1af4e4e7e1a603ef79d42&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27Desenvolvedor%2520front%2520end%2520-%2520Anderson%2520Rodrigo%2520de%2520Oliveira%2520Batista.pdf&response-expires=Thu%2C%2001%20Dec%202022%2022%3A03%3A32%20GMT"
             download
           >
             <Button
