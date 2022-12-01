@@ -55,6 +55,7 @@ export const Pagination = styled(Swiper)`
     opacity: 0.7;
 
     &.swiper-pagination-bullet-active {
+        background-color: red;
       opacity: 1;
     }
   }
