@@ -1,19 +1,12 @@
-import { useState } from "react";
-import * as S from "./Styles";
+import * as S from "./Styles"
+import { useThemeContext } from "../../hooks/useThemeToggler";
 
-
-const ThemeButton = () => {
-  const [checked, setChecked] = useState(false);
-
-  function handleCheckboxChange(e) {
-    e.preventDefault()
-    setChecked(!checked);
-  }
+const ThemeButton = (props) => {
+  const {theme} = useThemeContext()
 
   return (
-    <S.CheckboxContainer onClick={handleCheckboxChange}>
-      <S.HiddenCheckbox />
-      <S.CheckedBall checked={checked}></S.CheckedBall>
+    <S.CheckboxContainer  {...props}>
+      <S.CheckedBall theme={theme}></S.CheckedBall>
     </S.CheckboxContainer>
   );
 };

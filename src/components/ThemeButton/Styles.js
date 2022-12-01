@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { themes } from "../../contexts/Styles";
 
 export const CheckboxContainer = styled.label`
   cursor: pointer;
@@ -13,13 +14,8 @@ export const CheckboxContainer = styled.label`
   width: 30px;
 `;
 
-export const HiddenCheckbox = styled.input.attrs({ type: "checkbox" })`
-  display: none;
-  position: relative;
-`;
-
 export const CheckedBall = styled.span`
-  background-color: #2C2C2C;
+  background-color: #2c2c2c;
   border-radius: 150px 0 0 150px;
   cursor: pointer;
   height: 28px;
@@ -29,5 +25,5 @@ export const CheckedBall = styled.span`
   z-index: 999;
 
   transform: ${(props) =>
-    props.checked ? "rotate(180deg) translate(-13px, 0%)" : ""};
+    props.theme === themes.dark ? "" : "rotate(180deg) translate(-13px, 0%)"};
 `;

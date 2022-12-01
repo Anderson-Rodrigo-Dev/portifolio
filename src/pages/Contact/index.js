@@ -1,18 +1,21 @@
 import * as S from "./Styles";
 
 import { Button } from "../../components/Button";
+import { useThemeContext } from "../../hooks/useThemeToggler";
 
 const Contact = () => {
+  const {theme} = useThemeContext()
+
   return (
-    <S.ContainerContact>
+    <S.ContainerContact style={{backgroundColor: theme.background}}>
       <S.Contact>
         <S.TitleContact>Entre em Contato</S.TitleContact>
-        <S.Paragraph>
+        <S.Paragraph style={{color: theme.color}}>
           Atualmente estou buscando novas oportunidades, então se quiser entrar
           em contato ou, somente dar um oi ou feedback, estarei feliz em te
           receber e retornar assim que possível!
         </S.Paragraph>
-        <a href="mailto:andersonrodrigodev@gmail.com?subject=Oportunidade de trabalho&body=Olá, tudo bem?"><Button>Diga Olá!</Button></a>
+        <a href="mailto:andersonrodrigodev@gmail.com?subject=Oportunidade de trabalho&body=Olá, tudo bem?"><Button style={{color: theme.color}}>Diga Olá!</Button></a>
       </S.Contact>
       <div>
         <S.TitleContact>Minhas redes sociais</S.TitleContact>
@@ -23,7 +26,7 @@ const Contact = () => {
             rel="noreferrer"
           >
             <S.IconLinkedin />
-            <S.NetworksParagraph>LinkedIn</S.NetworksParagraph>
+            <S.NetworksParagraph style={{color: theme.color}}>LinkedIn</S.NetworksParagraph>
           </S.Networks>
 
           <S.Networks
@@ -32,12 +35,12 @@ const Contact = () => {
             rel="noreferrer"
           >
             <S.IconGithub />
-            <S.NetworksParagraph>GitHub</S.NetworksParagraph>
+            <S.NetworksParagraph style={{color: theme.color}}>GitHub</S.NetworksParagraph>
           </S.Networks>
 
           <S.Networks href="#">
             <S.IconInstagram />
-            <S.NetworksParagraph>Instagram</S.NetworksParagraph>
+            <S.NetworksParagraph style={{color: theme.color}}>Instagram</S.NetworksParagraph>
           </S.Networks>
 
           <S.Networks
@@ -46,7 +49,7 @@ const Contact = () => {
             rel="noreferrer"
           >
             <S.IconWhatsapp />
-            <S.NetworksParagraph>Whatsapp</S.NetworksParagraph>
+            <S.NetworksParagraph style={{color: theme.color}}>Whatsapp</S.NetworksParagraph>
           </S.Networks>
         </S.ContainerIcons>
       </div>

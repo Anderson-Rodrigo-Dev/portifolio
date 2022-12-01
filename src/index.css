@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700;900&display=swap");
 
 * {
   margin: 0;
@@ -8,10 +7,9 @@
   list-style: none;
   text-decoration: none;
   cursor: default;
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
 }
 
-
 .active {
-  border-bottom: 3px solid #B79999;
+  border-bottom: 3px solid #6c63ff;
 }

@@ -1,20 +1,33 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "../../components/Button";
+import { useThemeContext } from "../../hooks/useThemeToggler";
 import * as S from "./Styles";
 
-const About = () => {
-  const [clicked, setClicked] = useState(false);
+function getSessionStorageOrDefault(key, defaultValue) {
+  const stored = sessionStorage.getItem(key);
+  if (!stored) {
+    return defaultValue;
+  }
+  return JSON.parse(stored);
+}
 
-  const HandleDownload = () => {
-    setClicked(true);
-  };
-  
+const About = () => {
+  const [clicked, setClicked] = useState(
+    getSessionStorageOrDefault("download", false)
+  );
+
+  useEffect(() => {
+    sessionStorage.setItem("download", JSON.stringify(clicked));
+  }, [clicked]);
+
+  const { theme } = useThemeContext();
+
   return (
-    <S.ContainerAbout>
+    <S.ContainerAbout style={{ backgroundColor: theme.background }}>
       <S.ContainerInfo>
-        <S.AboutMe>Olá, eu sou</S.AboutMe>
+        <S.AboutMe style={{ color: theme.color }}>Olá, eu sou</S.AboutMe>
         <S.TitleName>Anderson Rodrigo!</S.TitleName>
-        <S.AboutMe>
+        <S.AboutMe style={{ color: theme.color }}>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
           facere vero aspernatur fugiat repellendus, harum ex. Hic sunt
           inventore beatae debitis quisquam, quam nesciunt quod odit ipsam
@@ -29,7 +42,7 @@ const About = () => {
         </S.AboutMe>
 
         {clicked ? (
-          <Button clicked={clicked} disabled>
+          <Button clicked={clicked}>
             <S.IconDownload />
           </Button>
         ) : (
@@ -37,7 +50,11 @@ const About = () => {
             href="https://export-download.canva.com/VvAyE/DAE6N3VvAyE/399/0-42537700313.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20221129%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221129T133414Z&X-Amz-Expires=20255&X-Amz-Signature=01425cc9c92861681beabece250fabba0c3a888b971ca58859fcaff1d4a57e15&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27Curriculo%2520Anderson.pdf&response-expires=Tue%2C%2029%20Nov%202022%2019%3A11%3A49%20GMT"
             download
           >
-            <Button onClick={HandleDownload} clicked={clicked}>
+            <Button
+              onClick={() => setClicked(true)}
+              clicked={clicked}
+              style={{ color: theme.color }}
+            >
               Baixar CV
             </Button>
           </a>

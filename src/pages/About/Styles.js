@@ -21,8 +21,8 @@ export const ContainerInfo = styled.div`
 export const TitleName = styled.h1`
   animation: blinkCursor 500ms steps(28) infinite normal,
     typing 2s steps(28) 1s normal;
-  border-right: 2px solid #FEFEFE;
-  color: #B79999;
+  border-right: 2px solid #fefefe;
+  color: #6c63ff;
   font-size: 50px;
   font-weight: 700;
   overflow: hidden;
@@ -51,11 +51,12 @@ export const TitleName = styled.h1`
 export const AboutMe = styled.p`
   font-size: 16px;
   text-align: justify;
-  color: #FEFEFE;
+  color: #fefefe;
+  margin-bottom: 30px;
 `;
 
 export const IconDownload = styled(RiDownload2Fill)`
-  color: #fefefe;
+  color: #6C63FF;
   height: 2rem;
   width: 2rem;
 `;

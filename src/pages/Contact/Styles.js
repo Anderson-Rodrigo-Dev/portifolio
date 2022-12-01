@@ -26,13 +26,14 @@ export const TitleContact = styled.h2`
   font-size: 30px;
   font-weight: 400;
   margin-bottom: 20px;
-  color: #b79999;
+  color: #6c63ff;
 `;
 
 export const Paragraph = styled.p`
   font-size: 1rem;
   text-align: justify;
   color: #fefefe;
+  margin-bottom: 30px;
 `;
 
 export const ContainerIcons = styled.div`
@@ -61,28 +62,28 @@ export const Networks = styled.a`
 `;
 
 export const IconWhatsapp = styled(RiWhatsappFill)`
-  color: #b79999;
+  color: #6c63ff;
   cursor: pointer;
   height: 2rem;
   width: 2rem;
 `;
 
 export const IconLinkedin = styled(RiLinkedinBoxFill)`
-  color: #b79999;
+  color: #6c63ff;
   cursor: pointer;
   height: 2rem;
   width: 2rem;
 `;
 
 export const IconGithub = styled(RiGithubFill)`
-  color: #b79999;
+  color: #6c63ff;
   cursor: pointer;
   height: 2rem;
   width: 2rem;
 `;
 
 export const IconInstagram = styled(RiInstagramFill)`
-  color: #b79999;
+  color: #6c63ff;
   cursor: pointer;
   height: 2rem;
   width: 2rem;
