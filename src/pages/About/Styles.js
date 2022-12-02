@@ -13,7 +13,6 @@ export const ContainerInfo = styled.div`
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  margin-left: 80px;
   max-width: 900px;
   width: 80%;
 `;
