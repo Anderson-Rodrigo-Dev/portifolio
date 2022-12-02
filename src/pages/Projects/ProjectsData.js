@@ -35,4 +35,22 @@ export const ProjectsData = [
     alt: "gif da página Palavra Secreta",
     github: "https://github.com/Anderson-Rodrigo-Dev/palavra-secreta",
   },
+  {
+    title: "Agência XYZ",
+    description:
+      "Langing Page criada para treinar HTML e CSS, foi desenvolvida também para treinar o responsivo e aplicar algumas funcionalidades aprendidas durante as aulas.",
+    tecnologies: "HTML, CSS",
+    src: "https://media1.tenor.com/images/ab3f2305448a8da0087086c7cc2449e2/tenor.gif?itemid=27184811",
+    alt: "gif da página Agência XYZ",
+    github: "https://github.com/Anderson-Rodrigo-Dev/agenciaxyz",
+  },
+  {
+    title: "Site XPTO",
+    description:
+      "Langing Page criada para treinar HTML e CSS e JavaScript, foi desenvolvida durante a MapaDevWeek do curso DevEmDobro, onde iniciei meus estudos em programação e tive meu primeiro contato com JavaScript.",
+    tecnologies: "HTML, CSS, JavaScript",
+    src: "https://media1.tenor.com/images/b82777eff87b1485c1da8f5cdcdf658a/tenor.gif?itemid=27184813",
+    alt: "gif da página Site XPTO",
+    github: "https://github.com/Anderson-Rodrigo-Dev/siteXPTO",
+  },
 ];
