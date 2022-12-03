@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 import { SiHtml5, SiCss3, SiJavascript, SiReact, SiGit } from "react-icons/si";
-import {TbCircleCheck} from "react-icons/tb"
+import { TbCircleCheck } from "react-icons/tb";
 
 export const ContainerSkills = styled.section`
   align-items: center;
@@ -31,16 +31,48 @@ export const TitleSkills = styled.h2`
 `;
 
 export const List = styled.ul`
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`;
 
 export const ListItem = styled.li`
-    display:flex;
-    gap: 20px;
-    align-items: center;
-`
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  &:nth-child(1) {
+    animation: movement 2s normal;
+  }
+  &:nth-child(2) {
+    animation: movement 2s normal;
+  }
+  &:nth-child(3) {
+    animation: movement 2s normal;
+  }
+  &:nth-child(4) {
+    animation: movement 2s normal;
+  }
+  &:nth-child(5) {
+    animation: movement 2s normal;
+  }
+
+  @keyframes movement {
+    0% {
+      opacity: 0;
+      position: relative;
+      left: -70px;
+    }
+    80% {
+      opacity: 0.7;
+      position: relative;
+      left: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+`;
 
 export const IconHTML = styled(SiHtml5)`
   color: #6c63ff;
@@ -72,7 +104,7 @@ export const IconGit = styled(SiGit)`
   width: 2rem;
 `;
 
-export const IconRocket = styled(TbCircleCheck)`
+export const IconCheck = styled(TbCircleCheck)`
   color: #6c63ff;
   height: 2rem;
   width: 2rem;

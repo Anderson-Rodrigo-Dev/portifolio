@@ -18,11 +18,11 @@ const Skills = () => {
       <S.ContainerSkill style={{ backgroundColor: theme.SidebarBackground }}>
         <S.TitleSkills>Soft Skills</S.TitleSkills>
         <S.List style={{color: theme.color}}>
-          <S.ListItem><S.IconRocket /> Ética</S.ListItem>
-          <S.ListItem><S.IconRocket /> Proatividade</S.ListItem>
-          <S.ListItem><S.IconRocket /> Trabalho em Equipe</S.ListItem>
-          <S.ListItem><S.IconRocket /> Organização</S.ListItem>
-          <S.ListItem><S.IconRocket /> Comunicação</S.ListItem>
+          <S.ListItem><S.IconCheck /> Ética</S.ListItem>
+          <S.ListItem><S.IconCheck /> Proatividade</S.ListItem>
+          <S.ListItem><S.IconCheck /> Trabalho em Equipe</S.ListItem>
+          <S.ListItem><S.IconCheck /> Organização</S.ListItem>
+          <S.ListItem><S.IconCheck /> Comunicação</S.ListItem>
         </S.List>
       </S.ContainerSkill>
     </S.ContainerSkills>
