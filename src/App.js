@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <ThemeProvider>
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Sidebar />
           <ThemeTogglerButton />
           <Routes>
