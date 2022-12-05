@@ -19,14 +19,15 @@ export const Container = styled.div`
   flex-direction: column;
   height: 100vh;
   justify-content: space-around;
+  padding: 20px;
+  width: 100%;
 `;
 
 export const Picture = styled.img`
   border-radius: 50%;
   max-width: 400px;
-  min-width: 180px;
   object-fit: cover;
-  width: 70%;
+  width: 100%;
 `;
 
 export const Navigate = styled.nav`
@@ -34,7 +35,9 @@ export const Navigate = styled.nav`
   flex-direction: column;
   gap: 20px;
   margin: 0 auto;
+  max-width: 400px;
   text-align: start;
+  width: 100%;
 `;
 
 export const NavItens = styled(NavLink)`

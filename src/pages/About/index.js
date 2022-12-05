@@ -27,7 +27,7 @@ const About = () => {
       <S.ContainerInfo>
         <S.AboutMe style={{ color: theme.color }}>Olá, eu sou</S.AboutMe>
         <S.TitleName>Anderson Rodrigo!</S.TitleName>
-        <S.AboutMe style={{ color: theme.color }}>
+        <S.AboutMe style={{ color: theme.color, marginBottom: "30px" }}>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
           facere vero aspernatur fugiat repellendus, harum ex. Hic sunt
           inventore beatae debitis quisquam, quam nesciunt quod odit ipsam

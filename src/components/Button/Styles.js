@@ -6,7 +6,6 @@ export const Button = styled.button`
   border-radius: 13px;
   cursor: ${(props) => (props.clicked ? "default" : "pointer")};
   font-size: 18px;
-  font-weight: 400;
   height: 60px;
   width: 150px;
   color: #fefefe;

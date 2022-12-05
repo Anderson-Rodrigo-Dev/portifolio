@@ -7,19 +7,19 @@ import {
   RiInstagramFill,
 } from "react-icons/ri";
 
-export const ContainerContact = styled.div`
+export const ContainerContact = styled.section`
   align-items: center;
   background-color: #111111;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   width: 80%;
 `;
 
 export const Contact = styled.div`
   max-width: 650px;
-  margin-bottom: 30px;
+  padding: 30px;
+  width: 100%;
 `;
 
 export const TitleContact = styled.h2`
@@ -37,11 +37,13 @@ export const Paragraph = styled.p`
 `;
 
 export const ContainerIcons = styled.div`
-  display: flex;
   align-items: center;
-  justify-content: center;
+  display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   max-width: 25rem;
+  padding: 30px;
+  width: 100%
 `;
 
 export const Networks = styled.a`

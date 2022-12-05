@@ -51,7 +51,6 @@ export const AboutMe = styled.p`
   font-size: 16px;
   text-align: justify;
   color: #fefefe;
-  margin-bottom: 30px;
 `;
 
 export const IconDownload = styled(RiDownload2Fill)`
