@@ -7,13 +7,14 @@ import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import { ThemeProvider } from "./contexts";
 import { ThemeTogglerButton } from "./components/ThemeTogglerButton";
+import MenuHamburguer from "./components/MenuHamburguer";
 
 function App() {
-  
   return (
     <div className="App">
       <ThemeProvider>
         <BrowserRouter basename={process.env.PUBLIC_URL}>
+          <MenuHamburguer />
           <Sidebar />
           <ThemeTogglerButton />
           <Routes>

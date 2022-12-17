@@ -9,9 +9,10 @@ export const CheckboxContainer = styled.label`
   display: block;
   height: 30px;
   position: absolute;
+  width: 30px;
+  position: absolute;
   right: 5%;
   top: 5%;
-  width: 30px;
 `;
 
 export const CheckedBall = styled.span`

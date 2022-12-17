@@ -4,10 +4,11 @@ import { Link } from "react-router-dom";
 import { useThemeContext } from "../../hooks/useThemeToggler";
 
 const Sidebar = () => {
-  const {theme} = useThemeContext()
+  const { theme } = useThemeContext();
 
   return (
-    <S.Aside style={{backgroundColor: theme.SidebarBackground}}>
+    <S.Aside style={{ backgroundColor: theme.SidebarBackground }}>
+      <S.IconClose />
       <S.Container>
         <Link to="/">
           <S.Picture
@@ -18,16 +19,24 @@ const Sidebar = () => {
 
         <S.Navigate>
           <li>
-            <S.NavItens to="/" style={{color: theme.color}}>Sobre mim</S.NavItens>
+            <S.NavItens to="/" style={{ color: theme.color }}>
+              Sobre mim
+            </S.NavItens>
           </li>
           <li>
-            <S.NavItens to="/projects" style={{color: theme.color}}>Projetos</S.NavItens>
+            <S.NavItens to="/projects" style={{ color: theme.color }}>
+              Projetos
+            </S.NavItens>
           </li>
           <li>
-            <S.NavItens to="/skills" style={{color: theme.color}}>Conhecimento</S.NavItens>
+            <S.NavItens to="/skills" style={{ color: theme.color }}>
+              Conhecimento
+            </S.NavItens>
           </li>
           <li>
-            <S.NavItens to="/contact" style={{color: theme.color}}>Contato</S.NavItens>
+            <S.NavItens to="/contact" style={{ color: theme.color }}>
+              Contato
+            </S.NavItens>
           </li>
         </S.Navigate>
 

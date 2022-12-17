@@ -41,22 +41,7 @@ export const ListItem = styled.li`
   display: flex;
   gap: 20px;
   align-items: center;
-
-  &:nth-child(1) {
-    animation: movement 2s normal;
-  }
-  &:nth-child(2) {
-    animation: movement 2s normal;
-  }
-  &:nth-child(3) {
-    animation: movement 2s normal;
-  }
-  &:nth-child(4) {
-    animation: movement 2s normal;
-  }
-  &:nth-child(5) {
-    animation: movement 2s normal;
-  }
+  animation: movement 2s normal;
 
   @keyframes movement {
     0% {
