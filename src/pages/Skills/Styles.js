@@ -11,6 +11,7 @@ export const ContainerSkills = styled.section`
   width: 80%;
   gap: 100px;
   flex-wrap: wrap;
+  padding: 30px;
 `;
 
 export const ContainerSkill = styled.div`

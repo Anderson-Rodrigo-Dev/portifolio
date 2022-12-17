@@ -7,6 +7,7 @@ export const ContainerAbout = styled.div`
   background-color: #111111;
   display: flex;
   width: 80%;
+  padding: 30px;
 `;
 
 export const ContainerInfo = styled.div`

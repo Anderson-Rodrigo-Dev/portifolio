@@ -14,6 +14,7 @@ export const ContainerContact = styled.section`
   flex-direction: column;
   justify-content: center;
   width: 80%;
+  padding: 30px;
 `;
 
 export const Contact = styled.div`
