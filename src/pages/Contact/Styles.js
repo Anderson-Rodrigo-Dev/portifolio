@@ -20,13 +20,14 @@ export const ContainerContact = styled.section`
     display: ${({ showMenu }) => showMenu ? "none" : "flex"};
     width: 100vw;
     height: 100%;
-    min-height: 100vh
+    min-height: 100vh;
+    padding: 60px 30px; 
   }
 `;
 
 export const Contact = styled.div`
   max-width: 650px;
-  padding: 30px;
+  margin-bottom: 30px;
   width: 100%;
 `;
 

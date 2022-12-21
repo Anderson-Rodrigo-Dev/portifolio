@@ -19,7 +19,7 @@ export const ContainerSkills = styled.section`
     height: 100%;
     gap: 30px;
     min-height: 100vh;
-    padding-top: 80px;
+    padding: 80px 30px;
   }
 `;
 

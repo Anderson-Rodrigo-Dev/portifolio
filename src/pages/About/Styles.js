@@ -60,14 +60,41 @@ export const TitleName = styled.h1`
 
   @media (max-width: 700px) {
     font-size: 40px;
+
+    @keyframes typing {
+      from {
+        width: 0px;
+      }
+      to {
+        width: 350px;
+      }
+    }
   }
 
   @media (max-width: 580px) {
     font-size: 30px;
+
+    @keyframes typing {
+      from {
+        width: 0px;
+      }
+      to {
+        width: 280px;
+      }
+    }
   }
 
   @media (max-width: 450px) {
     font-size: 24px;
+
+    @keyframes typing {
+      from {
+        width: 0px;
+      }
+      to {
+        width: 225px;
+      }
+    }
   }
 `;
 
