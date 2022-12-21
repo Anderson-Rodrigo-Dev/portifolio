@@ -2,12 +2,14 @@ import * as S from "./Styles";
 
 import { Button } from "../../components/Button";
 import { useThemeContext } from "../../hooks/useThemeToggler";
+import { useMenuContext } from "../../hooks/useMenuContext";
 
 const Contact = () => {
   const {theme} = useThemeContext()
+  const {showMenu} = useMenuContext()
 
   return (
-    <S.ContainerContact style={{backgroundColor: theme.background}}>
+    <S.ContainerContact style={{backgroundColor: theme.background}} showMenu={showMenu}>
       <S.Contact>
         <S.TitleContact>Entre em Contato</S.TitleContact>
         <S.Paragraph style={{color: theme.color}}>

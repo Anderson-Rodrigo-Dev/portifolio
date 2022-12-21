@@ -13,6 +13,11 @@ export const Aside = styled.aside`
   height: 100vh;
   width: 20%;
   padding: 30px;
+
+  @media (max-width: 1000px){
+    display: ${({ showMenu }) => (showMenu ? "block" : "none")};
+    width: 100%;
+  }
 `;
 
 export const Container = styled.div`
@@ -22,14 +27,15 @@ export const Container = styled.div`
   height: 100%;
   justify-content: space-around;
   width: 100%;
-`;
 
-export const Picture = styled.img`
-  border-radius: 50%;
-  max-width: 200px;
-  min-width: 150px;
-  object-fit: cover;
-  width: 100%;
+  img {
+    border-radius: 50%;
+    width: 200px;
+    min-width: 150px;
+    height: 200px;
+    min-height: 150px;
+    object-fit: cover;
+  }
 `;
 
 export const Navigate = styled.nav`
@@ -85,4 +91,8 @@ export const IconClose = styled(AiOutlineClose)`
   left: 5%;
   top: 5%;
   display: none;
+
+  @media (max-width: 1000px){
+    display: block;
+  }
 `;

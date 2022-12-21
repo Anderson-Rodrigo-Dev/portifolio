@@ -12,6 +12,12 @@ export const ContainerProject = styled.div`
   display: flex;
   width: 80%;
   padding: 30px;
+
+  @media(max-width: 1000px){
+    display: ${({ showMenu }) => showMenu ? "none" : "flex"};
+    width: 100vw;
+    height: 100vh;
+  }
 `;
 
 export const ContainerSlider = styled.div`

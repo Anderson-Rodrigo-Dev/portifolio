@@ -9,7 +9,7 @@ export const Button = styled.button`
   height: 60px;
   width: 150px;
   color: #fefefe;
-  transition: .3s;
+  transition: 0.3s;
 
   &:hover {
     background: ${(props) => (props.clicked ? "" : "#6C63FF")};

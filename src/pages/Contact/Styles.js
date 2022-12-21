@@ -15,6 +15,13 @@ export const ContainerContact = styled.section`
   justify-content: center;
   width: 80%;
   padding: 30px;
+
+  @media(max-width: 1000px){
+    display: ${({ showMenu }) => showMenu ? "none" : "flex"};
+    width: 100vw;
+    height: 100%;
+    min-height: 100vh
+  }
 `;
 
 export const Contact = styled.div`
@@ -28,11 +35,16 @@ export const TitleContact = styled.h2`
   font-weight: 400;
   margin-bottom: 20px;
   color: #6c63ff;
+
+  @media (max-width: 500px){
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
 `;
 
 export const Paragraph = styled.p`
   font-size: 1rem;
-  text-align: justify;
+  text-align: center;
   color: #fefefe;
   margin-bottom: 30px;
 `;
@@ -43,8 +55,8 @@ export const ContainerIcons = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   max-width: 25rem;
-  padding: 30px;
-  width: 100%
+  width: 100%;
+  margin-top: 10px;
 `;
 
 export const Networks = styled.a`
@@ -53,7 +65,7 @@ export const Networks = styled.a`
   gap: 10px;
   color: #000;
   font-size: 1rem;
-  width: 9.375rem;
+  width: 150px;
 
   &:nth-child(-n + 2) {
     margin-bottom: 50px;
@@ -61,6 +73,13 @@ export const Networks = styled.a`
 
   &:nth-child(odd) {
     margin-right: 30px;
+  }
+
+  @media (max-width: 600px){
+    
+    &:nth-child(-n + 4) {
+    margin: 0 10px 10px 0;;
+  }
   }
 `;
 

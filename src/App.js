@@ -5,25 +5,28 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
-import { ThemeProvider } from "./contexts";
+import { ThemeProvider } from "./contexts/ThemeContext";
 import { ThemeTogglerButton } from "./components/ThemeTogglerButton";
-import MenuHamburguer from "./components/MenuHamburguer";
+import { MenuProvider } from "./contexts/MenuContext";
+import { MenuShowButton } from "./components/MenuShowButton";
 
 function App() {
   return (
     <div className="App">
       <ThemeProvider>
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
-          <MenuHamburguer />
-          <Sidebar />
-          <ThemeTogglerButton />
-          <Routes>
-            <Route path="/" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </BrowserRouter>
+        <MenuProvider>
+          <BrowserRouter basename={process.env.PUBLIC_URL}>
+            <MenuShowButton />
+            <Sidebar />
+            <ThemeTogglerButton />
+            <Routes>
+              <Route path="/" element={<About />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/skills" element={<Skills />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </BrowserRouter>
+        </MenuProvider>
       </ThemeProvider>
     </div>
   );

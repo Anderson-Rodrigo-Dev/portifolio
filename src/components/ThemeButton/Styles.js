@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { themes } from "../../contexts/Styles";
+import { themes } from "../../contexts/ThemeContext/Styles";
 
 export const CheckboxContainer = styled.label`
   cursor: pointer;

@@ -1,10 +1,13 @@
 import * as S from "./Styles";
 import { useThemeContext } from "../../hooks/useThemeToggler";
+import { useMenuContext } from "../../hooks/useMenuContext";
 
 const Skills = () => {
   const { theme } = useThemeContext();
+  const {showMenu} = useMenuContext()
+
   return (
-    <S.ContainerSkills style={{ backgroundColor: theme.background }}>
+    <S.ContainerSkills style={{ backgroundColor: theme.background }} showMenu={showMenu}>
       <S.ContainerSkill style={{ backgroundColor: theme.SidebarBackground }}>
         <S.TitleSkills>Hard Skills</S.TitleSkills>
         <S.List style={{color: theme.color}}>

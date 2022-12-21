@@ -11,4 +11,8 @@ export const IconMenu = styled(FaBars)`
   left: 5%;
   top: 5%;
   display: none;
+
+  @media (max-width: 1000px) {
+    display: ${({ showMenu }) => (showMenu ? "none" : "block")};
+  }
 `;

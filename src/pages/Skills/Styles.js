@@ -12,6 +12,15 @@ export const ContainerSkills = styled.section`
   gap: 100px;
   flex-wrap: wrap;
   padding: 30px;
+
+  @media (max-width: 1000px) {
+    display: ${({ showMenu }) => showMenu ? "none" : "flex"};
+    width: 100vw;
+    height: 100%;
+    gap: 30px;
+    min-height: 100vh;
+    padding-top: 80px;
+  }
 `;
 
 export const ContainerSkill = styled.div`
@@ -29,6 +38,10 @@ export const TitleSkills = styled.h2`
   font-weight: 400;
   margin-bottom: 20px;
   color: #6c63ff;
+
+  @media (max-width: 500px){
+    font-size: 24px;
+  }
 `;
 
 export const List = styled.ul`

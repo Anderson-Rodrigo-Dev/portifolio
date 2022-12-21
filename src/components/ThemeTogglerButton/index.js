@@ -1,4 +1,4 @@
-import { themes } from "../../contexts/Styles";
+import { themes } from "../../contexts/ThemeContext/Styles";
 import { useThemeContext } from "../../hooks/useThemeToggler"; 
 import ThemeButton from "../ThemeButton";
 

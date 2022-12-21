@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Button } from "../../components/Button";
 import { useThemeContext } from "../../hooks/useThemeToggler";
 import * as S from "./Styles";
+import { useMenuContext } from "../../hooks/useMenuContext";
+
 
 function getSessionStorageOrDefault(key, defaultValue) {
   const stored = sessionStorage.getItem(key);
@@ -14,16 +16,17 @@ function getSessionStorageOrDefault(key, defaultValue) {
 const About = () => {
   const [clicked, setClicked] = useState(
     getSessionStorageOrDefault("download", false)
-  );
-
-  useEffect(() => {
-    sessionStorage.setItem("download", JSON.stringify(clicked));
-  }, [clicked]);
-
-  const { theme } = useThemeContext();
-
+    );
+    
+    useEffect(() => {
+      sessionStorage.setItem("download", JSON.stringify(clicked));
+    }, [clicked]);
+    
+    const { theme } = useThemeContext();
+    const showMenu = useMenuContext()
+    
   return (
-    <S.ContainerAbout style={{ backgroundColor: theme.background }}>
+    <S.ContainerAbout style={{ backgroundColor: theme.background }} showmenu={showMenu}>
       <S.ContainerInfo>
         <S.AboutMe style={{ color: theme.color }}>Olá, eu sou</S.AboutMe>
         <S.TitleName>Anderson Rodrigo!</S.TitleName>

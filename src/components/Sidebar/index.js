@@ -1,39 +1,49 @@
 import * as S from "./Styles";
 
+import foto from "../../foto.png";
+
 import { Link } from "react-router-dom";
 import { useThemeContext } from "../../hooks/useThemeToggler";
+import { useMenuContext } from "../../hooks/useMenuContext";
 
 const Sidebar = () => {
   const { theme } = useThemeContext();
+  const { showMenu, setShowMenu } = useMenuContext();
+
+  const handleCloseMenu = (e) => {
+    e.preventDefault();
+
+    setShowMenu(false);
+  };
 
   return (
-    <S.Aside style={{ backgroundColor: theme.SidebarBackground }}>
-      <S.IconClose />
+    <S.Aside
+      style={{ backgroundColor: theme.SidebarBackground }}
+      showMenu={showMenu}
+    >
+      <S.IconClose onClick={handleCloseMenu} />
       <S.Container>
         <Link to="/">
-          <S.Picture
-            src="https://via.placeholder.com/900x900"
-            alt="placeholder img"
-          />
+          <img src={foto} alt="foto anderson" />
         </Link>
 
         <S.Navigate>
-          <li>
+          <li onClick={handleCloseMenu}>
             <S.NavItens to="/" style={{ color: theme.color }}>
               Sobre mim
             </S.NavItens>
           </li>
-          <li>
+          <li onClick={handleCloseMenu}>
             <S.NavItens to="/projects" style={{ color: theme.color }}>
               Projetos
             </S.NavItens>
           </li>
-          <li>
+          <li onClick={handleCloseMenu}>
             <S.NavItens to="/skills" style={{ color: theme.color }}>
               Conhecimento
             </S.NavItens>
           </li>
-          <li>
+          <li onClick={handleCloseMenu}>
             <S.NavItens to="/contact" style={{ color: theme.color }}>
               Contato
             </S.NavItens>
