@@ -16,12 +16,12 @@ export const ContainerContact = styled.section`
   width: 80%;
   padding: 30px;
 
-  @media(max-width: 1000px){
-    display: ${({ showMenu }) => showMenu ? "none" : "flex"};
+  @media (max-width: 1000px) {
+    display: ${({ showMenu }) => (showMenu ? "none" : "flex")};
     width: 100vw;
     height: 100%;
     min-height: 100vh;
-    padding: 60px 30px; 
+    padding: 60px 30px;
   }
 `;
 
@@ -37,7 +37,7 @@ export const TitleContact = styled.h2`
   margin-bottom: 20px;
   color: #6c63ff;
 
-  @media (max-width: 500px){
+  @media (max-width: 500px) {
     font-size: 24px;
     margin-bottom: 10px;
   }
@@ -78,10 +78,21 @@ export const Networks = styled.a`
 
   @media (max-width: 600px){
     
+    &:nth-child(-n + 2) {
+    margin-bottom: 10px;
+  }
+
+  &:nth-child(odd) {
+    margin-right: 10px;
+  }
+
+  @media (max-width: 370px){
+    
     &:nth-child(-n + 4) {
-    margin: 0 10px 10px 0;;
+    margin: 10px auto;
   }
-  }
+
+  
 `;
 
 export const IconWhatsapp = styled(RiWhatsappFill)`
