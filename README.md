@@ -1,6 +1,6 @@
 ![img](https://i.imgur.com/AfZQTSb.jpg)
 
-Você pode acessá-lo com este [link.](https://anderson-rodrigo-dev.github.io/portifolio/)
+Você pode acessá-lo com este ![link.](https://anderson-rodrigo-dev.github.io/portifolio/)
 
 ---
 
@@ -16,7 +16,7 @@ Alguns features existentes são:
 - Utilização do react-router-dom;
 - Carrosel com react-swiper
 
-Você pode acessá-lo com este [link.](https://anderson-rodrigo-dev.github.io/portifolio/)
+Você pode acessá-lo com este ![link.](https://anderson-rodrigo-dev.github.io/portifolio/)
 
 ---
 
