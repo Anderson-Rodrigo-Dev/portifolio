@@ -1,7 +1,11 @@
+import * as S from "./Styles";
+
+import curriculo from "../../assets/Desenvolvedor front end - Anderson Rodrigo de Oliveira Batista.pdf"
+
 import { useState, useEffect } from "react";
 import { Button } from "../../components/Button";
+
 import { useThemeContext } from "../../hooks/useThemeToggler";
-import * as S from "./Styles";
 import { useMenuContext } from "../../hooks/useMenuContext";
 
 function getSessionStorageOrDefault(key, defaultValue) {
@@ -33,17 +37,13 @@ const About = () => {
         <S.AboutMe style={{ color: theme.color }}>Olá, eu sou</S.AboutMe>
         <S.TitleName>Anderson Rodrigo!</S.TitleName>
         <S.AboutMe style={{ color: theme.color, marginBottom: "30px" }}>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
-          facere vero aspernatur fugiat repellendus, harum ex. Hic sunt
-          inventore beatae debitis quisquam, quam nesciunt quod odit ipsam
-          veritatis recusandae vitae? Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Commodi accusantium odit voluptatum doloremque
-          itaque ad voluptatibus perferendis, tenetur numquam. Aliquam
-          voluptatem eos praesentium consequatur amet autem cupiditate rerum
-          incidunt molestiae?Lorem ipsum, dolor sit amet consectetur adipisicing
-          elit. Nostrum facere vero aspernatur fugiat repellendus, harum ex. Hic
-          sunt inventore beatae debitis quisquam, quam nesciunt quod odit ipsam
-          veritatis recusandae vitae?
+          Sou formado em Design Gráfico pela Universidade Potiguar (UnP) e estou
+          em transição de carreira. Em tecnologia, possuo conhecimento em HTML,
+          CSS, JavaScript, TypeScript e React. Em React estou aperfeiçoando meus
+          conhecimentos em styled-components, hooks, react-router e outros
+          componentes do React. <br />Possuo um perfil analítico, focado e organizado.
+          Gosto de novos desafios e aprender com eles.<br /> Nas horas vagas eu sou
+          aspirante a gamer, amo jogos retro e alguns novos.
         </S.AboutMe>
 
         {clicked ? (
@@ -51,7 +51,7 @@ const About = () => {
             <S.IconDownload />
           </Button>
         ) : (
-          <a href="../../../public/curriculo.pdf" download>
+          <a href={curriculo} download>
             <Button
               onClick={() => setClicked(true)}
               clicked={clicked}

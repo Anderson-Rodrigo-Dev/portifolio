@@ -11,20 +11,23 @@ export const ContainerProject = styled.div`
   background-color: #111111;
   display: flex;
   width: 80%;
+  height: 100vh;
   padding: 30px;
 
   @media (max-width: 1000px) {
     display: ${({ showMenu }) => (showMenu ? "none" : "flex")};
     width: 100vw;
-    height: 100vh;
+    height: 100%;
+    padding-top: 100px;
   }
 
   @media (max-width: 720px) {
-    padding: 60px;
+    padding: 100px 70px ;
   }
 
   @media (max-width: 450px) {
     padding: 60px 30px;
+    height: 100vh
   }
 `;
 
@@ -68,7 +71,7 @@ export const Paragraph = styled.p`
 `;
 
 export const Picture = styled.img`
-  width: 80%;
+  width: 70%;
   cursor: pointer;
   max-height: 400px;
   object-fit: cover;
@@ -81,6 +84,11 @@ export const Picture = styled.img`
 
 export const Pagination = styled(Swiper)`
   width: 900px;
+
+  .swiper-pagination {
+    position: relative;
+    margin-top: 10px;
+  }
 
   &.swiper-pagination-bullet,
   span {
