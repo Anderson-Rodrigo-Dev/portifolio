@@ -1,6 +1,6 @@
 import * as S from "./Styles";
 
-import foto from "../../assets/foto.png";
+
 
 import { Link } from "react-router-dom";
 import { useThemeContext } from "../../hooks/useThemeToggler";
@@ -24,7 +24,7 @@ const Sidebar = () => {
       <S.IconClose onClick={handleCloseMenu} />
       <S.Container>
         <Link to="/">
-          <img src={foto} alt="foto anderson" />
+          <img src={theme.foto} alt="foto anderson" />
         </Link>
 
         <S.Navigate>
