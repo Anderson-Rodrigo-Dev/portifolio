@@ -1,6 +1,6 @@
 import * as S from "./Styles";
 
-import foto from "../../foto.png";
+import foto from "../../assets/foto.png";
 
 import { Link } from "react-router-dom";
 import { useThemeContext } from "../../hooks/useThemeToggler";
