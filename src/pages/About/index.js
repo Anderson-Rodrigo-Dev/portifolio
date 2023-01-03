@@ -1,6 +1,6 @@
 import * as S from "./Styles";
 
-import curriculo from "../../assets/Desenvolvedor front end - Anderson Rodrigo de Oliveira Batista.pdf"
+import curriculo from "../../assets/Desenvolvedor front end - Anderson Rodrigo de Oliveira Batista.pdf";
 
 import { useState, useEffect } from "react";
 import { Button } from "../../components/Button";
@@ -38,12 +38,14 @@ const About = () => {
         <S.TitleName>Anderson Rodrigo!</S.TitleName>
         <S.AboutMe style={{ color: theme.color, marginBottom: "30px" }}>
           Sou formado em Design Gráfico pela Universidade Potiguar (UnP) e estou
-          em transição de carreira. Em tecnologia, possuo conhecimento em HTML,
-          CSS, JavaScript, TypeScript e React. Em React estou aperfeiçoando meus
-          conhecimentos em styled-components, hooks, react-router e outros
-          componentes do React. <br />Possuo um perfil analítico, focado e organizado.
-          Gosto de novos desafios e aprender com eles.<br /> Nas horas vagas eu sou
-          aspirante a gamer, amo jogos retro e alguns novos.
+          em transição de carreira.
+          <br /> Em tecnologia, possuo conhecimento em HTML, CSS, JavaScript,
+          TypeScript e React. Em React estou aperfeiçoando meus conhecimentos em
+          styled-components, hooks, react-router e outros componentes do React.
+          <br /> Sou analítico, focado e organizado. Gosto de novos desafios e
+          de aprender com eles. <br />
+          Nas horas vagas um dos meus hobby favoritos são os gamer, amo jogos
+          retro e alguns novos entre outras coisas do mundo geek.
         </S.AboutMe>
 
         {clicked ? (

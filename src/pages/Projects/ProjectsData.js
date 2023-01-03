@@ -11,7 +11,7 @@ export const ProjectsData = [
   {
     title: "GitHub Search",
     description:
-      "Página criada para treinar o consumo de uma API, nesse projeto foi utilizada a API do github, onde peguei informações do usuário, tais como repositório, commits e stars para apresentar na tela.",
+      " Página criada para aperfeiçoar o consumo de uma API, nesse projeto foi utilizada a API do github, onde utilizei informações do usuário, tais como repositório, commits e stars para apresentar na tela.",
     tecnologies: "HTML, CSS, JavaScript",
     src: "https://media1.tenor.com/images/ea8989b33befbf66f226d8c7b97820b2/tenor.gif?itemid=27179823",
     alt: "gif da página GitHub Search",
@@ -20,7 +20,7 @@ export const ProjectsData = [
   {
     title: "Database Pokemon",
     description:
-      "Projeto criado para avaliação nos conhecimentos em react e suas bibliotecas, nela utilizo várias funcionalidades do react, como Styled-Component, React Router e Context-Api.",
+      "Projeto criado para avaliação nos conhecimentos em react e suas bibliotecas, nele utilizo várias funcionalidades do react, como Styled-Component, React Router e Context-Api.",
     tecnologies: "JSX, JavaScript, ReactJs",
     src: "https://media1.tenor.com/images/40bc4914f0c76f5e7773309e81797a8f/tenor.gif?itemid=27179671",
     alt: "gif da página pokemon",
@@ -47,7 +47,7 @@ export const ProjectsData = [
   {
     title: "Site XPTO",
     description:
-      "Langing Page criada para treinar HTML e CSS e JavaScript, foi desenvolvida durante a MapaDevWeek do curso DevEmDobro, onde iniciei meus estudos em programação e tive meu primeiro contato com JavaScript.",
+      "Langing Page criada para treinar e aprimorar HTML, CSS e JavaScript, foi desenvolvida durante a MapaDevWeek do curso DevEmDobro, onde iniciei meus estudos em programação e tive meu primeiro contato com JavaScript.",
     tecnologies: "HTML, CSS, JavaScript",
     src: "https://media1.tenor.com/images/b82777eff87b1485c1da8f5cdcdf658a/tenor.gif?itemid=27184813",
     alt: "gif da página Site XPTO",
