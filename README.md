@@ -1,4 +1,4 @@
-![img](https://i.imgur.com/AfZQTSb.jpg)
+![img](https://i.imgur.com/bk67ldy.jpg)
 
 Você pode acessá-lo com este [link.](https://anderson-rodrigo-dev.github.io/portifolio/)
 
