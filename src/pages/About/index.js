@@ -17,13 +17,7 @@ function getSessionStorageOrDefault(key, defaultValue) {
 }
 
 const About = () => {
-  const [clicked, setClicked] = useState(
-    getSessionStorageOrDefault("download", false)
-  );
-
-  useEffect(() => {
-    sessionStorage.setItem("download", JSON.stringify(clicked));
-  }, [clicked]);
+  const [clicked, setClicked] = useState(false);
 
   const { theme } = useThemeContext();
   const showMenu = useMenuContext();
@@ -47,13 +41,12 @@ const About = () => {
           Nas horas vagas um dos meus hobby favoritos são os gamer, amo jogos
           retro e alguns novos entre outras coisas do mundo geek.
         </S.AboutMe>
-
-        {clicked ? (
-          <Button clicked={clicked}>
-            <S.IconDownload />
-          </Button>
-        ) : (
-          <a href={curriculo} download>
+        <a href={curriculo} download>
+          {clicked ? (
+            <Button clicked={clicked}>
+              <S.IconDownload />
+            </Button>
+          ) : (
             <Button
               onClick={() => setClicked(true)}
               clicked={clicked}
@@ -61,8 +54,8 @@ const About = () => {
             >
               Baixar CV
             </Button>
-          </a>
-        )}
+          )}
+        </a>
       </S.ContainerInfo>
     </S.ContainerAbout>
   );

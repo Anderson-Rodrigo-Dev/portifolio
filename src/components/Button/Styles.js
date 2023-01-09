@@ -4,7 +4,7 @@ export const Button = styled.button`
   background-color: transparent;
   border: 2px solid #6c63ff;
   border-radius: 13px;
-  cursor: ${(props) => (props.clicked ? "default" : "pointer")};
+  cursor:  pointer;
   font-size: 18px;
   height: 60px;
   width: 150px;

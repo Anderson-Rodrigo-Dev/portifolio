@@ -112,4 +112,5 @@ export const IconDownload = styled(RiDownload2Fill)`
   color: #6c63ff;
   height: 2rem;
   width: 2rem;
+  cursor: pointer;
 `;
