@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/portifolio/static/css/main.c8db0901.css",
-    "main.js": "/portifolio/static/js/main.d2cac2a4.js",
+    "main.js": "/portifolio/static/js/main.a3a16ab2.js",
     "static/js/787.be55e6d0.chunk.js": "/portifolio/static/js/787.be55e6d0.chunk.js",
+    "static/media/Desenvolvedor front end - Anderson Rodrigo de Oliveira Batista.pdf": "/portifolio/static/media/Desenvolvedor front end - Anderson Rodrigo de Oliveira Batista.4d17a67dd6427091c86f.pdf",
     "static/media/fotoEscura.png": "/portifolio/static/media/fotoEscura.2511898ae86b9f15b5fb.png",
-    "static/media/Desenvolvedor front end - Anderson Rodrigo de Oliveira Batista.pdf": "/portifolio/static/media/Desenvolvedor front end - Anderson Rodrigo de Oliveira Batista.bcebd10c9dd818a62043.pdf",
     "static/media/fotoClara.png": "/portifolio/static/media/fotoClara.977ab662b92c11951f2a.png",
     "index.html": "/portifolio/index.html",
     "main.c8db0901.css.map": "/portifolio/static/css/main.c8db0901.css.map",
-    "main.d2cac2a4.js.map": "/portifolio/static/js/main.d2cac2a4.js.map",
+    "main.a3a16ab2.js.map": "/portifolio/static/js/main.a3a16ab2.js.map",
     "787.be55e6d0.chunk.js.map": "/portifolio/static/js/787.be55e6d0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c8db0901.css",
-    "static/js/main.d2cac2a4.js"
+    "static/js/main.a3a16ab2.js"
   ]
 }
