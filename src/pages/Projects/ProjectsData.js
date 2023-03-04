@@ -2,11 +2,20 @@ export const ProjectsData = [
   {
     title: "Meu Portifólio",
     description:
-    "Portifólio criado para demonstrar meus conhecimentos em react, toda funcionalidade foi pensada para demonstrar meus aprendizados durante meus estudos, utilize hooks do react, manipulação de estado, styled-component, react-router, context-api entre outras funcionalidades..",
+    "Portifólio criado para demonstrar meus conhecimentos em react, toda funcionalidade foi pensada para demonstrar meus aprendizados durante meus estudos, utilize hooks do react, manipulação de estado, styled-component, react-router, context-api entre outras funcionalidades.",
     tecnologies: "JSX, JavaScript, ReactJs",
     src: "https://i.imgur.com/bk67ldy.jpg",
     alt: "imagem portifólio",
     github: "https://anderson-rodrigo-dev.github.io/portifolio/",
+  },
+  {
+    title: "La Boutik",
+    description:
+    "Projeto de Ecomerce criado para por em prática aprendizados com programação, iniciei esse projeto com o design no figma, nele criei um database e um login de usuário onde posso criar, remover e editar produtos(CRUD), adicionar produtos ao carrinho e manipular quantidade de produtos para compra.",
+    tecnologies: "JSX, JavaScript, ReactJs",
+    src: "https://media1.tenor.com/images/02c1ec39e5eebf07f352b155182384d0/tenor.gif?itemid=27647685",
+    alt: "imagem LaBoutik",
+    github: "https://laboutik-anderson-rodrigo-dev.vercel.app/",
   },
   {
     title: "Database Pokemon",
