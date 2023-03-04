@@ -2,19 +2,12 @@ import * as S from "./Styles";
 
 import curriculo from "../../assets/Desenvolvedor front end - Anderson Rodrigo de Oliveira Batista.pdf";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Button } from "../../components/Button";
 
 import { useThemeContext } from "../../hooks/useThemeToggler";
 import { useMenuContext } from "../../hooks/useMenuContext";
 
-function getSessionStorageOrDefault(key, defaultValue) {
-  const stored = sessionStorage.getItem(key);
-  if (!stored) {
-    return defaultValue;
-  }
-  return JSON.parse(stored);
-}
 
 const About = () => {
   const [clicked, setClicked] = useState(false);
